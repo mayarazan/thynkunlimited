@@ -1,0 +1,210 @@
+/*start global rules */
+*{
+    box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   color: white;
+   text-decoration: none;
+   
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+/* End global rules*/
+
+/* Start variables */
+.parent{
+   height: 100vh;
+   width: 85vw;
+   margin: auto;
+   background-color: #020057;
+}
+.p1{
+background-color: #020057;
+height: 100vh;
+width: 100vw;
+}
+.logo, .s1{
+    color: white;
+}
+nav a{
+    color: white;
+}
+
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 64px repeat(4, 1fr) 64px;
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+    }
+    
+     .logo { grid-area: 1 / 1 / 2 / 4; }
+    nav{ grid-area: 1 / 5 / 2 / 13; }
+    .pr{ grid-area: 2 / 1 / 6 / 8; }
+    .pht { grid-area: 2 / 8 / 6 / 13; }
+    .foot { grid-area: 6 / 1 / 7 / 13; }
+
+.logo, nav {
+    margin-top: 0px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.logo{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    }
+  
+.foot{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+}
+.fr{
+    color: black;
+}
+.line0{
+    width: 100%;
+    background-color: white;
+    height: 2px;
+    position: absolute;
+    top: 64px;
+}
+.s{
+    height: 34px;
+    width: 93px;
+    background-color: #F14141;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+   
+}
+.caro{
+    width: 7.5vw;
+    height: 64px;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+}
+.caro1{
+    width: 7.5vw;
+    height: 64px;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+a:hover{
+    color: #F14141;
+   
+   transition: 0.4s;
+}
+.s1:hover{
+    color: #020057;
+   
+    transition: 0.4s;
+
+}
+.v{
+    width: 153px;
+    height: 40px;
+    background-color: #020057 ;
+    border: #F14141 1px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    margin-bottom: 32px;
+}
+.point{
+    width: 109px;
+    height: 64px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.pt{
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    border-radius: 50%;
+    margin: 0 8px;
+}
+.line{
+    width: 150px;
+    height: 20px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background-color: rgb(255, 255, 255)171, 171, 236);
+}
+.line1{
+    height: 3px;
+    background-color: black;
+    width: 170px;
+}
+.trngl{
+    
+    border-color: black;
+    border-left:black 6px solid;
+    border-top: 6px solid transparent;
+    border-bottom:6px solid transparent;
+}
+.pht{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+   
+}
+.pr{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    max-width: 518px;
+
+}
+.n{
+    margin-top: 32px;
+    font-size: 84px;
+    font-weight: 600;
+}
+.d{
+    font-size: 23px;
+}
+.pht{
+    height: 459px;
+    width: 385px;
+    background-position: center;
+    background-image: url(../image/Mathematics-amico.png);
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pht::before{
+    content: "";
+   height:40px  ;
+   width: 299px ;
+   background-color: #020057;
+   position: absolute;
+   top:79px;
+}
+.pht1{
+    height: 10%;
+    width: 100%;
+    background-color: #020057;
+    position: relative;
+    bottom: -207px;
+}
